@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.input-container {
+    position: relative;
+    margin: 30px auto;
+    width: 200px;
+margin-left: 40px;  }
+  
+  .input-container input[type="text"] {
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+  }
+  
+  .input-container .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ccc;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .input-container input[type="text"]:focus ~ .label,
+  .input-container input[type="text"]:valid ~ .label {
+    top: -20px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .input-container .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #333;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+  }
+  
+  .input-container input[type="text"]:focus ~ .underline,
+  .input-container input[type="text"]:valid ~ .underline {
+    transform: scaleX(.8);
+  }
+  .holaa{
+    display: flex;
+    flex-direction: column;
+    max-width: 0;
+    position: absolute;
+  }
+  .signinklb{
+    margin-left: 40px;
+    font-family: serif ;
+    
+  }
+  /* ch box custom */
+  .cyberpunk-checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #BC6C25;
+    border-radius: 100px;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .cyberpunk-checkbox:before {
+    content: "";
+    background-color: #BC6C25;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 10px;
+    height: 10px;
+    border-radius:100px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cyberpunk-checkbox:checked:before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .cyberpunk-checkbox-label {
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-top: 230px;
+margin-left: 40px;
+  }
+  /* button */
+  button {
+    width: 150px;
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 35px;
+    color: white;
+    z-index: 1;
+    background: #BC6C25;
+    position: absolute;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    margin-top: 280px;
+margin-left: 40px;
+
+   }
+   
+   button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: white;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+    
+   }
+   
+   button:hover {
+    color: black;
+   }
+   
+   button:hover::before {
+    width: 100%;
+   }
+ h3{
+    margin-top: 350px;
+    position: absolute;
+    margin-left: 40px;
+ }
+ .sginup{
+    margin-top: 390px;
+    position: absolute;
+    text-decoration: none;
+margin-left: 40px;
+ }

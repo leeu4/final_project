@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body dir="rtl">
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400&display=swap');
+
+
+    *,
+    *::before,
+    *::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Tajawal';
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        height: 300vh;
+        background: whitesmoke;
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(29, 105, 94);
+        border-radius: 3px;
+    }
+
+    .navbar {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        transition: 0.3s ease;
+    }
+
+    nav a,
+    li {
+        margin: 0 3%;
+    }
+
+    .login {
+        width: 10%;
+    }
+
+    .login button {
+        width: 100%;
+        padding: 5% 0;
+        background: whitesmoke;
+        transition: 0.4s ease;
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .login button.scrolled {
+        color: white;
+        background: rgb(47, 171, 153);
+    }
+</style>
+
+<title>Nav</title>
+</head>
+
+<body>
+<nav id="navbars" class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/Ziyad-pages/img/logo2.png"
+                style="background: whitesmoke; border-radius: 12px;" alt="logo" width="60px"></a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#">الرئيسيه</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">الانجازات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">النشاطات</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        الادارة
+                    </a>
+                    <ul style="background: whitesmoke;" class="dropdown-menu text-white">
+                        <li><a style="margin: 0; text-align: start;" class="dropdown-item" href="#">المدير</a></li>
+                        <li><a style="margin: 0; text-align: start;" class="dropdown-item" href="#">الوكلاء</a></li>
+                        <li><a style="margin: 0; text-align: start;" class="dropdown-item" href="#">المرشد
+                                الطلابي</a></li>
+                        <li><a style="margin: 0; text-align: start;" class="dropdown-item" href="#">المعلمين</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="login">
+            <button><a href="/Ziyad-pages/sgin-pages/sgin.html">تسجيل دخول</a></button>
+        </div>
+    </div>
+</nav>
+
+<script>
+    document.addEventListener('scroll', function () {
+        const nav = document.querySelector('nav');
+        const loginBtn = document.querySelector('.login button');
+        const links = document.querySelectorAll('.nav-link')
+
+        if (window.scrollY > 150) {
+            nav.classList.add('bg-white');
+            loginBtn.classList.add('scrolled');
+            links.forEach(link => {
+                link.classList.remove('text-white');
+            });
+
+        } else {
+            nav.classList.remove('bg-white');
+            loginBtn.classList.remove('scrolled');
+            links.forEach(link => {
+                link.classList.add('text-white');
+            });
+        }
+    })
+</script>
+
+    <div class="test" >
+        <h1>العربيه القديمه  <span>الاثار </span> </h1>
+        <div class="title">
+            <p>الآثار العربية القديمة تشمل مجموعة واسعة من المواقع والآثار التي تعود إلى العصور القديمة في منطقة الجزيرة العربية والشبه الجزيرة العربية. هناك العديد من الثقافات القديمة التي ازدهرت في هذه المنطقة وتركت آثارًا هامة تعكس تاريخها العريق وتراثها الثقافي.
+             <br>   
+              <br>   
+            </p>
+        </div>
+    </div>
+
+
+    <section class="se-card">
+        <div class="dad-card">
+            <section><img src="/Ziyad-pages/img/Screenshot 2023-09-19 110315.png" alt="" class="img-card"  data-aos="fade-up"></section>
+            <section  data-aos="fade-up"><h1>مدائن صالح </h1><p>يعود تاريخ مدائن صالح إلى الحضارة النبطية، وهي حضارة قديمة ازدهرت في المنطقة بين القرن الثالث قبل الميلاد والقرن الثالث بعد الميلاد. يُعتقد أن المدينة كانت تستخدم كمحطة تجارية رئيسية على طريق التجارة القديمة بين الجنوب والشمال، وكانت تضم مجموعة من الهياكل المعمارية البارزة.</p><button class="button "> المزيد
+        </div>
+    </section>
+
+    <hr>
+    <section class="se-card">
+        <div class="dad-card">
+            <section><img src="/Ziyad-pages/img/Screenshot 2023-09-19 110955.png" alt="" class="img-card"  data-aos="fade-up"></section>
+            <section  data-aos="fade-up"><h1>قرية الفاو </h1><p>قرية الفاو الأثرية عاصمة مملكة كندة الأولى أحد الممالك العربية القديمة في نجد، ومن أهم المواقع الأثرية في شبه الجزيرة العربية؛ لأنها عبارة عن تجسيد متكامل للمدن العربية قبل الإسلام، [1] وتقع في المملكة العربية السعودية، في الجنوب الغربي من العاصمة الرياض بمسافة 700 كم،</p><button class="button "> المزيد
+        </div>
+    </section>
+
+    <hr>
+    <section class="se-card">
+        <div class="dad-card">
+            <section><img src="/Ziyad-pages/img/Screenshot 2023-09-19 111502.png" alt="" class="img-card"  data-aos="fade-up"></section>
+            <section  data-aos="fade-up"><h1>الأُخدود </h1><p>الأُخدود وعرفت سابقاً باسم «رقمات» هي مدينة تاريخية ويعود تاريخ القلعة التي تشكل العنصر الأبرز في الموقع إلى الفترة الممتدة من 500 ق.م إلى منتصف الألف الأول الميلادي وهي فترة الاستيطان الرئيسي للموقع.[1] تقع الأخدود على ضفاف وادي نجران في منطقة نجران في المملكة العربية السعودية.  </p><button class="button "> المزيد
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+</body>
+</html>

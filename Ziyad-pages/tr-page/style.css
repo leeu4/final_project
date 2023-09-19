@@ -1,0 +1,85 @@
+.test {
+    height: 99vh;
+    width: 100%;
+    background-image: url(/Ziyad-pages/img/Screenshot\ 2023-09-19\ 102959.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.test h1 {
+    padding-top: 20%;
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+}
+
+
+.test p {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding-top: 2%;
+}
+.img-card{
+    border-radius: 20px;
+    margin-top: 50px;
+    width: 400px;
+    border-left: #d39354 solid 10px;
+    border-style: solid;
+    position: relative;
+}
+.dad-card{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    gap: 2%;
+
+}
+.se-card{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+
+}
+/* button */
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+  }
+  
+  .button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .button-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgba(10, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+    );
+    transition: all 0.475s;
+  }
