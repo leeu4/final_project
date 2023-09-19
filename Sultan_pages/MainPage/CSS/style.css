@@ -7,7 +7,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Tajawal';
+    font-family: 'Tajawal' sans-serif;
 }
 
 html {
@@ -26,7 +26,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(29, 105, 94);
+    background: rgba(65, 30, 8);
     border-radius: 3px;
 }
 
@@ -59,13 +59,13 @@ li {
 
 .login button.scrolled {
     color: white;
-    background: rgb(47, 171, 153);
+    background: rgba(65, 30, 8);
 }
 
 main {
     width: 100%;
     height: 101vh;
-    background: url(/IMG/home-01.jpg) no-repeat;
+    background: url(/Sultan_pages/IMG/70bcdd25c5729476628e06e5cd63d356.png) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -82,6 +82,96 @@ main span {
     color: white;
     width: 100%;
     height: 100%;
-    background: #72380ee4;
+    background: rgba(65, 30, 8, 0.7);
     border-radius: 0 0 12px 12px;
+}
+
+.moree {
+    margin: 5% 0;
+    padding: 0 2%;
+}
+
+.moree div:nth-child(1) h1 {
+    border-right: 5px solid rgba(65, 30, 8);
+    border-radius: 0 0 12px 0;
+    padding-right: 2%;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+    width: 30%;
+}
+
+.cards .card .card-img {
+    height: 28vh;
+    background: rgba(65, 30, 8, 0.7);
+    margin-bottom: 2%;
+}
+
+.cards .card:nth-child(3) .card-img {
+    background: url(https://cdn.salla.sa/IiyioF8U7XodTWUKllxW1wjAuhKsxPdVvXPXDyC3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cards .card .card-subtitle , .card-title {
+    padding: 0 2%;
+}
+
+.cards .card .card-subtitle {
+    margin-bottom: 3%;
+}
+
+.card-basket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    cursor: pointer;
+    background: whitesmoke;
+    border-radius: 0 0 6px 6px;
+}
+
+.bi {
+    font-size: x-large;
+    color: black;
+    transition: 0.4s ease;
+}
+
+.bi:hover {
+    transform: scale(1.2);
+}
+
+.bi-bookmark-heart-fill {
+    color: rgb(201, 150, 12);
+}
+
+@media screen and (max-width: 991px) {
+    .login {
+        display: none;
+    }
+    .cards .card {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .login {
+        display: none;
+    }
+    .cards .card {
+        width: 80%;
+    }
 }
