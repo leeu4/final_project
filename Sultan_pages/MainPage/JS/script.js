@@ -1,5 +1,5 @@
-let navimg = document.getElementById("navimg")
 document.addEventListener('scroll', function () {
+    const navimg = document.getElementById("navimg")
     const nav = document.querySelector('nav');
     const loginBtn = document.querySelector('.login button');
     const links = document.querySelectorAll('.nav-link')

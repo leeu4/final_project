@@ -166,12 +166,3 @@ main span {
         width: 40%;
     }
 }
-
-@media screen and (max-width: 600px) {
-    .login {
-        display: none;
-    }
-    .cards .card {
-        width: 80%;
-    }
-}

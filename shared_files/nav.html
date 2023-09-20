@@ -12,7 +12,7 @@
         crossorigin="anonymous"></script>
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@00&display=swap');
 
 
         *,
@@ -21,7 +21,7 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
-            font-family: 'Tajawal';
+            font-family: 'Tajawal' sans-serif;
         }
 
         html {
@@ -40,7 +40,7 @@
 
         /* Handle */
         ::-webkit-scrollbar-thumb {
-            background: rgb(29, 105, 94);
+            background: rgba(65, 30, 8);
             border-radius: 3px;
         }
 
@@ -73,7 +73,7 @@
 
         .login button.scrolled {
             color: white;
-            background: rgb(47, 171, 153);
+            background: rgba(65, 30, 8);
         }
     </style>
 
@@ -83,8 +83,7 @@
 <body>
     <nav id="navbars" class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="/IMG/logo.png"
-                    style="background: whitesmoke; border-radius: 12px;" alt="logo" width="60px"></a>
+            <a class="navbar-brand" href="#"><img id="navimg" alt="logo" width="85px"></a>
             <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -125,11 +124,13 @@
 
     <script>
         document.addEventListener('scroll', function () {
+            const navimg = document.getElementById("navimg")
             const nav = document.querySelector('nav');
             const loginBtn = document.querySelector('.login button');
             const links = document.querySelectorAll('.nav-link')
 
             if (window.scrollY > 150) {
+                navimg.src = '/Sultan_pages/IMG/logo.png';
                 nav.classList.add('bg-white');
                 loginBtn.classList.add('scrolled');
                 links.forEach(link => {
@@ -137,6 +138,7 @@
                 });
 
             } else {
+                navimg.src = '/Sultan_pages/IMG/logo2.png';
                 nav.classList.remove('bg-white');
                 loginBtn.classList.remove('scrolled');
                 links.forEach(link => {
