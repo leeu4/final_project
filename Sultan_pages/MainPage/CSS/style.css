@@ -202,12 +202,6 @@ li {
     margin-bottom: 2%;
 }
 
-.cards .card:nth-child(3) .card-img {
-    background: url(https://cdn.salla.sa/IiyioF8U7XodTWUKllxW1wjAuhKsxPdVvXPXDyC3.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
 .cards .card .card-subtitle,
 .card-title {
     padding: 0 2%;

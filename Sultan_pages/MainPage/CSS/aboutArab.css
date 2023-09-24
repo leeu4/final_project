@@ -296,6 +296,12 @@ ul{
 }
 }
 
+@media screen and (max-width: 1400px) {
+    .footer {
+        margin-top: 80%;
+    }
+}
+
 @media screen and (max-width: 991px) {
     .login {
         display: none;
@@ -329,12 +335,6 @@ ul{
     }
 }
 
-@media screen and (max-width: 1400px) {
-    .footer {
-        margin-top: 80%;
-    }
-}
-
 @media screen and (max-width: 300px) {
     .footer {
         margin-top: 300%;
@@ -347,3 +347,4 @@ ul{
         width: 20%;
     }
 }
+

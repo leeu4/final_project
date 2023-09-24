@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>مفضلتي</title>
 </head>
+
 <body>
-    
+    <h1>الصور المفضلة</h1>
+    <ul id="favorites-list"></ul>
+
+    <script>
+        const favoritesList = document.getElementById("favorites-list");
+        const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+        favorites.forEach((item) => {
+            const listItem = document.createElement("li");
+            const image = document.createElement("img");
+            image.src = item.image;
+            image.alt = item.title;
+
+            const title = document.createElement("p");
+            title.textContent = item.title;
+
+            const deleteButton = document.createElement("button");
+            deleteButton.textContent = "حذف";
+            deleteButton.addEventListener("click", () => removeFromFavorites(item.id));
+
+
+            listItem.appendChild(image);
+            listItem.appendChild(title);
+            listItem.appendChild(deleteButton);
+
+            favoritesList.appendChild(listItem);
+        });
+
+        function removeFromFavorites(id) {
+            const updatedFavorites = favorites.filter((item) => item.id !== id);
+
+            localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
+
+            location.reload();
+        }
+    </script>
 </body>
+
 </html>
