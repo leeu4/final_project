@@ -126,13 +126,14 @@ window.addEventListener('load', function () {
         cardSubtitle.className = 'card-subtitle';
         cardSubtitle.textContent = subtitles[i - 1];
 
+        cardContainer.appendChild(basket);
+
+        basket.appendChild(like);
+
 
         cardContainer.appendChild(cardImage);
         cardContainer.appendChild(cardTitle);
         cardContainer.appendChild(cardSubtitle);
-        cardContainer.appendChild(basket);
-
-        basket.appendChild(like);
 
         rowContainer.appendChild(cardContainer);
 

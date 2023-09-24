@@ -126,6 +126,12 @@ li {
     background-size: cover;
 }
 
+.swiper-slide:nth-child(2) {
+    background: url(/Sultan_pages/IMG/slide2.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .opcity {
     padding: 5%;
     display: flex;
@@ -189,14 +195,15 @@ li {
 }
 
 .card-basket {
+    align-self: start;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 20%;
     height: 15%;
     cursor: pointer;
-    background: whitesmoke;
-    border-radius: 0 0 6px 6px;
+    border-radius: 6px;
 }
 
 .bi {
@@ -211,6 +218,110 @@ li {
 
 .bi-bookmark-heart-fill {
     color: rgb(201, 150, 12);
+}
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+    background: white;
+    padding: 0 0 70px 0;
+}
+.Shape {
+    width: 100%;
+    height: 3vh;
+    padding: 2% 0;
+    background: url(/Sultan_pages/IMG/Shapes.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3%;
+}
+.footer-col{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 20%; 
+}
+.imglogo {
+    align-items: center;
+}
+.footer-col img {
+    width: 75%;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: rgb(65, 30, 8);
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+    padding-bottom: 4%;
+    border-radius: 4px;
+    border-bottom: 1px solid black;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li {
+    width: 100%;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #6e6e6e;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #1a1a1a;
+	padding-right: 8px;
+}
+.footer-col .social-links {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+}
+.footer-col .social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	height: 40px;
+	width: 40px;
+	background-color: rgb(65, 30, 8);
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: rgb(65, 30, 8);
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
 }
 
 @media screen and (max-width: 991px) {
