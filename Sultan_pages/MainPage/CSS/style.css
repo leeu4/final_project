@@ -15,7 +15,8 @@ html {
 }
 
 body {
-    height: 300vh;
+    position: relative;
+    height: 100%;
     background: whitesmoke;
 }
 
@@ -32,7 +33,7 @@ body {
 
 .navbar {
     position: fixed;
-    z-index: 1;
+    z-index: 511;
     width: 100%;
     transition: 0.3s ease;
 }
@@ -62,17 +63,70 @@ li {
     background: rgba(65, 30, 8);
 }
 
-main {
+.swiper {
     width: 100%;
-    height: 101vh;
-    background: url(/Sultan_pages/IMG/70bcdd25c5729476628e06e5cd63d356.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    border-radius: 0 0 12px 12px;
+    height: 100vh;
 }
 
-main span {
+.swiper-button {
+    color: rgba(65, 30, 8);
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-pagination-bullet{
+    background: rgba(65, 30, 8);
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: transparent;
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: transparent;
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
+
+.swiper-slide:nth-child(1) {
+    background: url(/Sultan_pages/IMG/70bcdd25c5729476628e06e5cd63d356.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.opcity {
     padding: 5%;
     display: flex;
     flex-direction: column;
@@ -125,7 +179,8 @@ main span {
     background-position: center;
 }
 
-.cards .card .card-subtitle , .card-title {
+.cards .card .card-subtitle,
+.card-title {
     padding: 0 2%;
 }
 
@@ -162,6 +217,7 @@ main span {
     .login {
         display: none;
     }
+
     .cards .card {
         width: 40%;
     }
