@@ -20,6 +20,7 @@
 .main-top{
   display: flex;
   width: 100%;
+
 }
 .main-top i{
   position: absolute;
@@ -220,12 +221,13 @@ display: inline-block;
     text-align: center;
 }
 
-.flexroww {
+/* .flexroww {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+
 }
 
 .flexroww div {
@@ -236,7 +238,7 @@ display: inline-block;
     margin: 5% 2%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     height: 15%;
-}
+} */
 
 .flexcoulmn label {
     color: black;
@@ -326,6 +328,7 @@ table thead tr{
 /* payment-method */
 /* ================== */
 .Btn {
+
    height: 40px;
     display: flex;
     align-items: center;
@@ -357,7 +360,6 @@ table thead tr{
     width:100%;
     height: 130px;
     position: absolute;
-    background-color: black;
     border-radius: 50%;
     left: -100%;
     top: 0;
@@ -368,7 +370,7 @@ table thead tr{
   .Btn:hover::before {
     transition-duration: .3s;
     transform: translate(100%,-50%);
-    border-radius: 0;
+    border-radius: 02;
   }
   
   .Btn:active {
@@ -416,6 +418,153 @@ margin-top: 40px;
   text-align: none;
   color: #fff;
 }
+.inputGroup {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 2em 0 2em 0;
+  max-width: 190px;
+  position: relative; 
+  margin-right: 255px
+
+
+}
+
+.inputGroup input {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid rgb(200, 200, 200);
+  background-color: transparent;
+  border-radius: 20px;
+  width: 450px;
+  
+
+}
+
+.inputGroup label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(100, 100, 100);
+  margin-top: -45%;
+}
+
+.inputGroup :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #e8e8e8;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(150, 150, 200);
+}
+#cars{
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid rgb(200, 200, 200);
+  
+}
+.main-div2{
+  display: flex;
+  flex-direction: row;
+  gap: 17%;
+
+
+}
+.inputGroup1 input {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid rgb(200, 200, 200);
+  background-color: transparent;
+  border-radius: 20px;
+  width: 150px;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+
+  
+
+}
+
+.inputGroup1 label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(100, 100, 100);
+  margin-top: -45%;
+}
+
+.inputGroup1 :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #e8e8e8;
+}
+
+.inputGroup1 :is(input:focus, input:valid) {
+  border-color: rgb(150, 150, 200);
+}
+.profile-picture{
+  color: #BC6C25;
+  /* border-style: groove; */
+
+}
+.p-of-pic{
+  display: flex;
+  flex-direction: column;
+
+}
+/* book now button here */
+.buttton-book-now{
+  padding: 9px;
+  border-style: solid;
+  width: 120px;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+
+
+
+}
+a{
+  text-decoration: none;
+}
+.hola1 {
+  font-family: monospace;
+  background-color: #BC6C25 ;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  width: 100px;
+  height: 45px;
+  transition: .3s;
+  cursor: pointer;
+  padding: 9px;
+}
+
+.hola :hover {
+  background-color: #BC6C25;
+  box-shadow: 0 0 0 5px #BC6C25;
+  color: #fff;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+
 
 
   

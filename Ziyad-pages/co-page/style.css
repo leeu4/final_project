@@ -4,19 +4,14 @@
     box-sizing: border-box;
 }
 .img-backgrond{
-    width: 35%;
-    margin-left: 400px;
-    border-style: groove;
+    width: 40%;
+    height: 50vh;
     display: flex;
     flex-direction: row;
    justify-content: center;
-   align-items: center; 
-    border-color: bisque;
-    background-color: antiquewhite;
+   
 }
-.div1{
 
-}
 .rab6{
     text-decoration: none;
     color: #BC6C25;
@@ -29,4 +24,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.material-symbols-outlined{
+    color: green;
+    border-style: groove;
+    border-radius: 100px;
+    border-color: green;
+    
+}
+.div1{
+    display: flex;
+    justify-content: center;
 }
