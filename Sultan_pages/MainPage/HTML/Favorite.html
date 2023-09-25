@@ -1,18 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="/Sultan_pages/MainPage/CSS/Favorite.css">
     <title>مفضلتي</title>
 </head>
 
 <body>
+    <nav id="navbars" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img id="navimg" alt="logo" width="85px"></a>
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page"
+                            href="/Sultan_pages/MainPage/HTML/index.html">الرئيسيه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">الانجازات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/Sultan_pages/MainPage/HTML/Favorite.html">مفضلتي</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            الادارة
+                        </a>
+                        <ul style="background: whitesmoke;" class="dropdown-menu text-white">
+                            <li><a style="margin: 0; text-align: start;" class="dropdown-item" href="#">المدير</a></li>
+                            <li><a style="margin: 0; text-align: start;" class="dropdown-item" href="#">الوكلاء</a></li>
+                            <li><a style="margin: 0; text-align: start;" class="dropdown-item" href="#">المرشد
+                                    الطلابي</a></li>
+                            <li><a style="margin: 0; text-align: start;" class="dropdown-item" href="#">المعلمين</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="login">
+                <button>تسجيل دخول</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <span class="opcity">
+            <h3>مفضلتي </h3>
+            <p>هذه الصفحة تمكنك من تحديد تفضيلاتك والاحتفاظ بها، بحيث يمكنك الوصول إليها في أي وقت تزورنا فيها .
+                <br> ببساطة، يمكنك تسجيل الأشياء التي تحب مشاهدتها أو متابعتها.            </p>
+        </span>
+    </main>
+
     <h1>الصور المفضلة</h1>
     <ul id="favorites-list"></ul>
 
     <script>
+        document.addEventListener('scroll', function () {
+            const navimg = document.getElementById("navimg")
+            const nav = document.querySelector('nav');
+            const loginBtn = document.querySelector('.login button');
+            const links = document.querySelectorAll('.nav-link')
+
+            if (window.scrollY > 25) {
+                navimg.src = '/Sultan_pages/IMG/logo.png';
+                nav.classList.add('bg-white');
+                loginBtn.classList.add('scrolled');
+                links.forEach(link => {
+                    link.classList.remove('text-white');
+                });
+
+            } else {
+                navimg.src = '/Sultan_pages/IMG/logo2.png';
+                nav.classList.remove('bg-white');
+                loginBtn.classList.remove('scrolled');
+                links.forEach(link => {
+                    link.classList.add('text-white');
+                });
+            }
+        })
+
         const favoritesList = document.getElementById("favorites-list");
         const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
