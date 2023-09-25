@@ -30,10 +30,11 @@
     border-radius: 20px;
     margin-top: 50px;
     width: 400px;
-    border-left: #d39354 solid 10px;
     border-style: solid;
     position: relative;
     border: none;
+    border-left:silver  solid 10px;
+    height: 280px;
 }
 .dad-card{
     display: flex;
@@ -179,4 +180,123 @@
     width: 200px;
   }
   
-  
+  /* img slider here style */
+  .swiper {
+    width: 100%;
+    height: 100vh;
+}
+
+.swiper-button {
+    color: rgba(65, 30, 8);
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-pagination-bullet{
+    background: rgba(65, 30, 8);
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: transparent;
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: transparent;
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
+
+.swiper-slide:nth-child(1) {
+    background: url(/Sultan_pages/IMG/70bcdd25c5729476628e06e5cd63d356.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide:nth-child(2) {
+    background: url(/Sultan_pages/IMG/slide2.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide:nth-child(3) {
+    background: url(/Sultan_pages/IMG/slide3.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.aboutArabs {
+    margin-right: 20%;
+    align-self: end;
+    text-decoration: none;
+}
+
+.aboutArabs button {
+    font-size: large;
+    color: white;
+    width: 10vw;
+    height: 5vh;
+    border: none;
+    outline: none;
+    background: rgb(168, 99, 56);
+    border-radius: 6px;
+}
+
+.opcity {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background: rgba(65, 30, 8, 0.7);
+    border-radius: 0 0 12px 12px;
+}
+
+.moree {
+    margin: 5% 0;
+    padding: 0 2%;
+}
+
+.moree div:nth-child(1) h1 {
+    border-right: 5px solid rgba(65, 30, 8);
+    border-radius: 0 0 12px 0;
+    padding-right: 2%;
+}
+
+
+

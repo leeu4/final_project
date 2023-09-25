@@ -548,8 +548,10 @@ a{
   border: none;
   border-radius: 8px;
   width: 100px;
-  height: 45px;
-  transition: .3s;
+  height: 40px;
+  transition: .3
+  
+  s;
   cursor: pointer;
   padding: 9px;
 }
@@ -563,9 +565,3 @@ a{
   text-decoration: none;
   color: #fff;
 }
-
-
-
-
-  
-  
