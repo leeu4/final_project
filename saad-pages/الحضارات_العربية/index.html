@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>هجرة|اختراعات العرب</title>
+    <title>الحضارات|اختراعات العرب</title>
 </head>
 <body>
     <nav id="navbars" class="navbar navbar-expand-lg">
@@ -78,43 +78,19 @@
             }
         })
     </script>
-      <section id="first">
-        <div class="text_container">
-            <h1 style="color: white;"><b>الإسهامات العربية الرائعة في العصور <span style="color: white;">القديمة</span></b></h1>
-            <p>في العصور القديمة، ساهمت الحضارة العربية بإسهامات كبيرة في ميدان العلوم والاختراعات، مثل</p>
-            <p>اكتشاف الأرقام العربية ونظام الأرقام الهندي، وابتكار البوصلة وتقدم في علم الطب والرياضيات والكيمياء</p>
-            <button id="learn">&leftarrow; تعرف على ابرز الاختراعات</button>
+    <!-- body -->
+    <section id="first">
+        <div>
+            <h1> تاريخ وتطور الثقافة العربية عبر العصور</h1>
+            <p>تعتبر الحضارات العربية من بين أقدم الحضارات في التاريخ البشري، حيث تمتد جذورها إلى آلاف السنين</p>
+            <p>شهدت هذه الحضارات تنوعًا ثقافيًا وتاريخيًا غنيًا، حيث تأثرت بمختلف الثقافات والحضارات الأخرى وأسهمت في تطور الإنسانية بشكل كبير</p>
+            <button id="learn">تعرف على الحضارات العربية</button>
         </div>
-      </section>
-      <hr>
-      <section class="second" id="main">
-        <div data-aos="fade-right" class="card">
-            <h1>علم الجبر</h1>
-            <p>المخترع:محمد بن موسى الخوارزمي</p>
-            <img class="inventor" src="الخورازمي.jpg">
-            <p> ابتكر الخوارزمي علم الجبر وقدم العديد من الأسس والمفاهيم الرياضية التي تشكل أساس الجبر الحديث.</p>
-        </div>
-        <div data-aos="fade-right" class="card">
-            <h1>المؤلفات الطبية</h1>
-            <p>المخترع: ابن سينا</p>
-            <img class="inventor" id="sena" src="ابن_سينا.jpeg">
-            <p>كتب ابن سينا العديد من الكتب الطبية، ومن أشهرها "القانون في الطب"، والذي أثر بشكل كبير في تطوير علم الطب.</p>
-        </div>
-        <div data-aos="fade-right" class="card">
-            <h1>العدسة</h1>
-            <p>المخترع: ابن الهيثم</p>
-            <img class="inventor" id="abn_alhethm" src="ابن_الهيثم.png">
-            <p>قام العالم العربي ابن الهيثم بدراسة الضوء والعدسات البصرية، وقد ساهمت أبحاثه في تطوير البصريات والعدسات.</p>
-        </div>
-      </section>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-        AOS.init();
-        const button = document.getElementById("learn");
-        const cards = document.getElementById("main");
-        button.addEventListener('click',()=>{
-        window.location.href="#main";
-        })
-      </script>
+    </section>
+    <main id="main">
+        <div class="cards"></div>
+        <div class="cards"></div>
+        <div class="cards"></div>
+    </main>
 </body>
 </html>
