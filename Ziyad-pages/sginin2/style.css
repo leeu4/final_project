@@ -38,13 +38,14 @@ body {
     justify-content: center;
     align-items: end;
     color: white;
-    background: url(/Sultan_pages/IMG/jahliaImg2.png) no-repeat;
+    background: url(/Sultan_pages/IMG/jahliaImg3.png) no-repeat;
     background-size: cover;
     background-position-x: 60%;
     width: 50%;
     font-size: small;
     padding-bottom: 2%;
     /* width:70%; */
+    
 }
 
 .center .background .greybackgorund {
@@ -252,6 +253,7 @@ body {
     font-size: smaller;
     background: #BC6C25;
     color: white;
+    
 }
 
 .formlogin form .createAc {
