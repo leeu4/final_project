@@ -63,6 +63,8 @@
     background-size: 400%;
     color: #fff;
     border: none;
+    background: rgb(168, 99, 56);
+
   }
   
   .button:hover::before {
@@ -197,6 +199,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 220px;
 }
 .swiper-pagination-bullet{
     background: rgba(65, 30, 8);
