@@ -57,7 +57,7 @@ axios
       const card = document.createElement("div");
       card.className = "card"
       card.innerHTML = `
-                  <div class="card-basket" onclick="addToFavorites('${result.id}', '${result.image}', '${result.title}', '${result.subtitle}')"><i class="bi bi-bookmark-heart-fill"></i></div>
+                  <div class="card-basket" onclick="addToFavorites('${result.id}', '${result.image}', '${result.title}', '${result.subtitle}')"><i class="bi bi-bookmark-heart"></i></div>
                   <div class="card-img" style="background: url(${result.image}) no-repeat; background-position: center; background-size: cover;"></div>
                   <div class="card-title">${result.title}</div>
                   <div class="card-subtitle">${result.subtitle}</div>

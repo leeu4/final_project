@@ -71,7 +71,7 @@ main {
     text-align: center;
     width: 100%;
     height: 100vh;
-    background: url(/Sultan_pages/IMG/slide3.png) no-repeat;
+    background: url(/Sultan_pages/IMG/jahliaImg.png) no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -288,6 +288,9 @@ ul{
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
+}
+main {
+    background-position: 70%;
 }
 }
 @media(max-width: 574px){

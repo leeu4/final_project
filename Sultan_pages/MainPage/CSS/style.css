@@ -176,7 +176,7 @@ li {
 
 .moree div:nth-child(1) h1 {
     border-right: 5px solid rgba(65, 30, 8);
-    border-radius: 0 0 12px 0;
+    border-radius: l0 0 12px 0;
     padding-right: 2%;
 }
 
@@ -202,15 +202,6 @@ li {
     margin-bottom: 2%;
 }
 
-.cards .card .card-subtitle,
-.card-title {
-    padding: 0 2%;
-}
-
-.cards .card .card-subtitle {
-    margin-bottom: 3%;
-}
-
 .card-basket {
     align-self: start;
     position: absolute;
@@ -225,7 +216,7 @@ li {
 
 .bi {
     font-size: x-large;
-    color: black;
+    color: white;
     transition: 0.4s ease;
 }
 
@@ -235,6 +226,16 @@ li {
 
 .bi-bookmark-heart-fill {
     color: rgb(201, 150, 12);
+}
+
+
+.cards .card .card-subtitle,
+.card-title {
+    padding: 0 2%;
+}
+
+.cards .card .card-subtitle {
+    margin-bottom: 3%;
 }
 
 .container{
