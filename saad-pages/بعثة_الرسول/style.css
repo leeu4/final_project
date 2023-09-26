@@ -1,0 +1,112 @@
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0);
+    border-radius: 3px;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+nav a,
+li {
+    margin: 0 3%;
+}
+
+.login {
+    width: 10%;
+}
+
+.login button {
+    width: 100%;
+    padding: 5% 0;
+    background: whitesmoke;
+    transition: 0.4s ease;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.login button.scrolled {
+    color: white;
+    background: rgb(47, 171, 153);
+}
+.first
+{
+    height: 70vh;
+    background-repeat:no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(0.8);
+    text-align: center;
+    background-image: url(./الجاهلية.png);
+    background-position: center;
+    text-align: right;
+}
+.first div p
+{
+    font-size:23px;
+    color:white;
+    font-weight: 900;
+}
+.first div h1
+{
+    color:white;
+}
+.cards img
+{
+    width: 100%;
+    border-radius: 15px;
+}
+.cards h1
+{
+    position: absolute;
+    color:white;
+    right:140px;
+    top:0;
+}
+.cards
+{
+    border: solid 2px;
+    height: 60vh;
+    width: 30%;
+    position: relative;
+    background-color:#f3bd7a;
+    border-radius: 15px;
+}
+main
+{
+    height: 220vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:5%;
+}
+.text_container
+{
+    text-align: right;
+    color:rgb(0, 0, 0);
+    font-size:20px;
+    display: flex;
+}
+#keeba
+{
+    right:180px;
+}

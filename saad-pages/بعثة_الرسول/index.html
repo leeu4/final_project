@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../shared_files/shared.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>بعثة الرسول|اختراعات العرب</title>
+</head>
+<body>
+    <nav id="navbars" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../../Sultan_pages/IMG/logo.png"
+                    style="background: whitesmoke; border-radius: 12px;" alt="logo" width="60px"></a>
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">الرئيسيه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">الانجازات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">النشاطات</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            الادارة
+                        </a>
+                        <ul style="background: whitesmoke;" class="dropdown-menu text-white">
+                            <li><a style="margin: 0; text-align: start;" class="dropdown-item" href="#">المدير</a></li>
+                            <li><a style="margin: 0; text-align: start;" class="dropdown-item" href="#">الوكلاء</a></li>
+                            <li><a style="margin: 0; text-align: start;" class="dropdown-item" href="#">المرشد
+                                    الطلابي</a></li>
+                            <li><a style="margin: 0; text-align: start;" class="dropdown-item" href="#">المعلمين</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="login">
+                <button>تسجيل دخول</button>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        document.addEventListener('scroll', function () {
+            const nav = document.querySelector('nav');
+            const loginBtn = document.querySelector('.login button');
+            const links = document.querySelectorAll('.nav-link')
+
+            if (window.scrollY > 150) {
+                nav.classList.add('bg-white');
+                loginBtn.classList.add('scrolled');
+                links.forEach(link => {
+                    link.classList.remove('text-white');
+                });
+
+            } else {
+                nav.classList.remove('bg-white');
+                loginBtn.classList.remove('scrolled');
+                links.forEach(link => {
+                    link.classList.add('text-white');
+                });
+            }
+        })
+    </script>
+    <section class="first">
+        <div>
+            <h1>بعثة الرسول محمد (صلى الله عليه وسلم)</h1>
+            <p>بعثة الرسول محمد (صلى الله عليه وسلم) هي الرسالة النبوية التي قام بها النبي محمد على مدى عقود</p>
+            <p>لنقل الرسالة الإلهية والإصلاح الديني والاجتماعي في الجاهلية والدعوة إلى التوحيد والعبادة الصحيحة</p>
+        </div>
+    </section>
+    <main id="main">
+        <div class="cards">
+            <h1>بداية البعثة</h1>
+            <img src="second (2).png">
+            <div class="text_container">
+                <p>بدأت بعثة الرسول محمد (صلى الله عليه وسلم) في عام 610 ميلاديًا عندما تلقى أول وحي من الله تعالى عبر الملك جبريل (جبرائيل) في غار حراء بجبل النور بالقرب من مكة المكرمة. وهذا الوحي الأول كان بآية قرآنية وقد كانت البعثة تحمل رسالة التوحيد والدعوة للإسلام.</p>
+            </div>
+        </div>
+        <div class="cards">
+            <h1 id="keeba">الهجرة</h1>
+            <img src="keeba.png">
+            <div class="text_container">
+
+            </div>
+        </div>
+        <div class="cards">
+            <div class="text_container"></div>
+        </div>
+    </main>
+</body>
