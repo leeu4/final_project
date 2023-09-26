@@ -107,6 +107,7 @@ main {
     flex-wrap: wrap;
     padding: 0 2%;
     gap: 5%;
+    margin-bottom: 5%;
 }
 
 .cards .card {
@@ -146,7 +147,7 @@ main {
     transform: scale(1.2);
 }
 
-.bi-bookmark-heart-fill {
+.bi-bookmark-heart-fill , .bi-bookmark-heart {
     color: rgb(201, 150, 12);
 }
 
