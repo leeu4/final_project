@@ -71,7 +71,7 @@ hr
 
 }
 .card{
-    background-color: #efd6b9;
+    background-color:#e2b172;
     color:rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
@@ -84,7 +84,7 @@ hr
     height: 60vh;
     gap:5%;
     text-align: center;
-    padding:5px;
+    padding:15px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     border:none;
     width:30%;
@@ -102,11 +102,11 @@ hr
 .card:before {
     content: "";
     position: absolute;
-    background-color: #72380E;
-    width: 10%;
+    background-color: #58371f;
+    width: 5%;
     top:0;
     left: 0;
-    height:10%;
+    height:5%;
     border-bottom-right-radius: 50px;
     z-index: -1;
     transition:.5s ease;
@@ -180,4 +180,17 @@ li {
     color:white;
     transition: 0.3s;
     border-radius: 5px;
+}
+
+.card p
+{
+    font-size:21px;
+}
+#middle h1
+{
+    transform: translateY(50%);
+}
+.title
+{
+    transform: translateY(30%);
 }
