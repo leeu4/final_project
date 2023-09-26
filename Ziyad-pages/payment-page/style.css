@@ -466,17 +466,29 @@ margin-top: 40px;
 #cars{
   width: 100px;
   height: 40px;
-  border-radius: 20px;
+  border-radius: 15px;
   border: 2px solid rgb(200, 200, 200);
+  margin-top: 35px;
   
 }
 .main-div2{
   display: flex;
   flex-direction: row;
-  gap: 17%;
+  gap: 13%;
 
 
 }
+.inputGroup1 {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 2em 0 2em 0;
+  max-width: 190px;
+  position: relative; 
+  margin-right: 255px
+
+
+}
+
+
 .inputGroup1 input {
   font-size: 100%;
   padding: 0.8em;
@@ -487,7 +499,7 @@ margin-top: 40px;
   width: 150px;
   width: 100px;
   height: 40px;
-  border-radius: 20px;
+  border-radius: 15px;
 
   
 
