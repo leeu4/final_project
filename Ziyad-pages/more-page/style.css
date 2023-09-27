@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@00&display=swap');
+
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal' sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    background: whitesmoke;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(65, 30, 8);
+    border-radius: 3px;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 511;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+nav a,
+li {
+    margin: 0 3%;
+}
+
+.login {
+    width: 10%;
+}
+
+.login button {
+    width: 100%;
+    padding: 5% 0;
+    background: whitesmoke;
+    transition: 0.4s ease;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.login button.scrolled {
+    color: white;
+    background: rgba(65, 30, 8);
+}
+
+main {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: url(/Sultan_pages/IMG/slide3.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.opcity {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background: rgba(65, 30, 8, 0.7);
+    border-radius: 0 0 12px 12px;
+}
+
+.aboutArabs {
+    width: 8%;
+    height: 6%;
+    margin-right: 20%;
+    align-self: start;
+    text-decoration: none;
+}
+
+.aboutArabs button {
+    font-size: large;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: rgb(168, 99, 56);
+    border-radius: 6px;
+}
+
+.aboutArab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    height: 200vh;
+    padding: 5% 5%;
+}
+
+.title1 {
+    width: 100%;
+}
+
+.title1 h1:nth-child(1){
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.title1 h1:nth-child(2){
+    border-right: 5px solid rgba(65, 30, 8);
+    border-radius: 0 0 12px 0;
+    padding-right: 2%;
+}
+
+.aboutjahlia {
+    display: flex;
+    width: 100%;
+    height: 30%;
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.jahlia {
+    direction:ltr; 
+    padding: 1% 2%;
+    text-align: right;
+    width: 50%;
+    height: 100%;
+    overflow-y: scroll;
+    background: rgb(247, 247, 247);
+    border-radius: 0 12px 12px 0;
+}
+
+.jahliaImg {
+    width: 50%;
+    height: 100%;
+    background: url(/Sultan_pages/IMG/fav.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px 0 0 12px;
+}
+
+.title2 {
+    margin-top: 5%;
+    width: 100%;
+}
+
+.title2 h1{
+    border-right: 5px solid rgba(65, 30, 8);
+    border-radius: 0 0 12px 0;
+    padding-right: 2%;
+}
+
+.jahliaImg2 {
+    width: 50%;
+    height: 100%;
+    background: url(/Sultan_pages/IMG/slide2.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px 0 0 12px;
+}
+
+.jahliaImg3 {
+    width: 50%;
+    height: 100%;
+    background: url(/Ziyad-pages/img/Screenshot\ 2023-09-18\ 100221.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px 0 0 12px;
+}
+
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+    margin-top: 40%;
+    background: white;
+    padding: 0 0 70px 0;
+}
+.Shape {
+    width: 100%;
+    height: 3vh;
+    padding: 2% 0;
+    background: url(/Sultan_pages/IMG/Shapes.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3%;
+}
+.footer-col{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 20%; 
+}
+.imglogo {
+    align-items: center;
+}
+.footer-col img {
+    width: 75%;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: rgb(65, 30, 8);
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+    padding-bottom: 4%;
+    border-radius: 4px;
+    border-bottom: 1px solid black;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li {
+    width: 100%;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #6e6e6e;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #1a1a1a;
+	padding-right: 8px;
+}
+.footer-col .social-links {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+}
+.footer-col .social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	height: 40px;
+	width: 40px;
+	background-color: rgb(65, 30, 8);
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: rgb(65, 30, 8);
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+main {
+    background-position: 70%;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 1400px) {
+    .footer {
+        margin-top: 80%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .login {
+        display: none;
+    }
+    .aboutArabs {
+        margin-right: 10%;
+        width: 12%;
+    }
+    .aboutjahlia {
+        flex-direction: column;
+        width: 100%;
+    }
+    .aboutjahlia div {
+        width: 100%;
+        border-radius: 12px;
+    }
+    .jahlia {
+        order: 2;
+    }
+    .footer {
+        margin-top: 80%;
+    }
+    .cards .card {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 644px) {
+    .footer {
+        margin-top: 180%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .footer {
+        margin-top: 300%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .aboutArabs {
+        width: 20%;
+    }
+}
+a{
+    text-decoration: none;
+}
+
