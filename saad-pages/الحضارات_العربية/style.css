@@ -95,7 +95,7 @@ main
     width: 80%;
     overflow: hidden;
     text-align: right;
-    gap:2.5%;
+    gap:1%;
 }
 .text_container
 {
@@ -103,9 +103,10 @@ main
     /* border:black 1px solid; */
     padding:0 10px 0 10px;
     width:50%;
-    color:white;
-    background-color: #dda47c;
-  
+    color:rgb(0, 0, 0);
+    background-color: #ffffff;
+  border-top: #72380E solid;
+  border-bottom: #72380E solid;
 }
 .cards img
 {
