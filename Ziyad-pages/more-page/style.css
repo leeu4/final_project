@@ -63,96 +63,17 @@ li {
     background: rgba(65, 30, 8);
 }
 
-.swiper {
+main {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 100%;
     height: 100vh;
-}
-
-.swiper-button {
-    color: rgba(65, 30, 8);
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.swiper-pagination-bullet{
-    background: rgba(65, 30, 8);
-}
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.autoplay-progress {
-    position: absolute;
-    right: 16px;
-    bottom: 16px;
-    z-index: 10;
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: transparent;
-}
-
-.autoplay-progress svg {
-    --progress: 0;
-    position: absolute;
-    left: 0;
-    top: 0px;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    stroke-width: 4px;
-    stroke: transparent;
-    fill: none;
-    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
-    stroke-dasharray: 125.6;
-    transform: rotate(-90deg);
-}
-
-.swiper-slide:nth-child(1) {
-    background: url(/Sultan_pages/IMG/70bcdd25c5729476628e06e5cd63d356.png) no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.swiper-slide:nth-child(2) {
-    background: url(/Sultan_pages/IMG/slide2.png) no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.swiper-slide:nth-child(3) {
     background: url(/Sultan_pages/IMG/slide3.png) no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-.aboutArabs {
-    margin-right: 20%;
-    align-self: end;
-    text-decoration: none;
-}
-
-.aboutArabs button {
-    font-size: large;
-    color: white;
-    width: 10vw;
-    height: 5vh;
-    border: none;
-    outline: none;
-    background: rgb(168, 99, 56);
-    border-radius: 6px;
 }
 
 .opcity {
@@ -169,73 +90,106 @@ li {
     border-radius: 0 0 12px 12px;
 }
 
-.moree {
-    margin: 5% 0;
-    padding: 0 2%;
-}
-
-.moree div:nth-child(1) h1 {
-    border-right: 5px solid rgba(65, 30, 8);
-    border-radius: l0 0 12px 0;
-    padding-right: 2%;
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5%;
-}
-
-.cards .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 5%;
-    width: 30%;
-}
-
-.cards .card .card-img {
-    height: 28vh;
-    background: rgba(65, 30, 8, 0.7);
-    margin-bottom: 2%;
-}
-
-.card-basket {
+.aboutArabs {
+    width: 8%;
+    height: 6%;
+    margin-right: 20%;
     align-self: start;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    height: 15%;
-    cursor: pointer;
+    text-decoration: none;
+}
+
+.aboutArabs button {
+    font-size: large;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: rgb(168, 99, 56);
     border-radius: 6px;
 }
 
-.bi {
-    font-size: x-large;
-    color: white;
-    transition: 0.4s ease;
+.aboutArab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    height: 200vh;
+    padding: 5% 5%;
 }
 
-.bi:hover {
-    transform: scale(1.2);
+.title1 {
+    width: 100%;
 }
 
-.bi-bookmark-heart-fill , .bi-bookmark-heart {
-    color: rgb(201, 150, 12);
-}
-
-.cards .card .card-subtitle,
-.card-title {
-    padding: 0 2%;
-}
-
-.cards .card .card-subtitle {
+.title1 h1:nth-child(1){
     margin-bottom: 3%;
+    text-align: center;
 }
+
+.title1 h1:nth-child(2){
+    border-right: 5px solid rgba(65, 30, 8);
+    border-radius: 0 0 12px 0;
+    padding-right: 2%;
+}
+
+.aboutjahlia {
+    display: flex;
+    width: 100%;
+    height: 30%;
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.jahlia {
+    direction:ltr; 
+    padding: 1% 2%;
+    text-align: right;
+    width: 50%;
+    height: 100%;
+    overflow-y: scroll;
+    background: rgb(247, 247, 247);
+    border-radius: 0 12px 12px 0;
+}
+
+.jahliaImg {
+    width: 50%;
+    height: 100%;
+    background: url(/Sultan_pages/IMG/fav.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px 0 0 12px;
+}
+
+.title2 {
+    margin-top: 5%;
+    width: 100%;
+}
+
+.title2 h1{
+    border-right: 5px solid rgba(65, 30, 8);
+    border-radius: 0 0 12px 0;
+    padding-right: 2%;
+}
+
+.jahliaImg2 {
+    width: 50%;
+    height: 100%;
+    background: url(/Sultan_pages/IMG/slide2.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px 0 0 12px;
+}
+
+.jahliaImg3 {
+    width: 50%;
+    height: 100%;
+    background: url(/Ziyad-pages/img/Screenshot\ 2023-09-18\ 100221.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px 0 0 12px;
+}
+
 
 .container{
 	max-width: 1170px;
@@ -249,6 +203,7 @@ ul{
 	list-style: none;
 }
 .footer{
+    margin-top: 40%;
     background: white;
     padding: 0 0 70px 0;
 }
@@ -328,39 +283,74 @@ ul{
 	background-color: rgb(65, 30, 8);
 }
 
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+main {
+    background-position: 70%;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 1400px) {
+    .footer {
+        margin-top: 80%;
+    }
+}
+
 @media screen and (max-width: 991px) {
     .login {
         display: none;
-    }
-
-    .cards .card {
-        width: 40%;
     }
     .aboutArabs {
         margin-right: 10%;
         width: 12%;
     }
+    .aboutjahlia {
+        flex-direction: column;
+        width: 100%;
+    }
+    .aboutjahlia div {
+        width: 100%;
+        border-radius: 12px;
+    }
+    .jahlia {
+        order: 2;
+    }
+    .footer {
+        margin-top: 80%;
+    }
+    .cards .card {
+        width: 40%;
+    }
 }
 
-/*responsive*/
-@media(max-width: 767px){
-    .footer-col{
-      width: 50%;
-      margin-bottom: 30px;
-  }
-  .cards .card {
-      width: 60%;
-  }
-  }
-  @media(max-width: 574px){
-    .footer-col{
-      width: 100%;
-  }
-  .cards .card {
-      width: 100%;
-  }
-  
-  .aboutArabs {
-    width: 20%;
+@media screen and (max-width: 644px) {
+    .footer {
+        margin-top: 180%;
+    }
 }
+
+@media screen and (max-width: 300px) {
+    .footer {
+        margin-top: 300%;
+    }
 }
+
+@media screen and (max-width: 500px) {
+
+    .aboutArabs {
+        width: 20%;
+    }
+}
+a{
+    text-decoration: none;
+}
+
