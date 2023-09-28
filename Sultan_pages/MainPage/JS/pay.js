@@ -23,3 +23,20 @@ document.addEventListener('scroll', function () {
       });
     }
   })
+
+  let policy = document.getElementById('policy');
+  let book = document.getElementById('book');
+  let book2 = document.getElementById('book2');
+
+  if (policy.checked == true) {
+    book.document.s
+  } else {
+    
+  }
+
+
+let tick = document.getElementById('tick');
+let ticknum = Number(tick);
+
+let totalprice = document.getElementById('totalprice');
+totalprice.textContent = `السعر الاجمالي : ${totalprice}`;

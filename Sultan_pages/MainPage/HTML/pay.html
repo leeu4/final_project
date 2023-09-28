@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="/Sultan_pages/MainPage/CSS/pay.css">
-    <title>Museum Tickets</title>
+    <title>الدفع</title>
 </head>
 
 <body>
@@ -66,7 +66,12 @@
             </div>
             <div class="e70">
                 <div class="imaged">
-                    
+                    <div class="tickets">
+                        <button id="remove" class="remove"><i class="bi bi-plus"></i></button>
+                        <h4 id="tick"></h4>
+                        <button id="add" class="add"><i class="bi bi-plus"></i></button>
+                        <p>التذكرة الواحده ب20 ر,س</p>
+                    </div>
                 </div>
                 <div class="detail">
                     <h3>نظرة عامة</h3>
@@ -98,12 +103,13 @@
                 <div class="price">
                     <div class="up">
                         <p>تذاكر تبدأ من <i class="bi bi-arrow-down"></i></p>
-                        <h3>30 ر,س                        </h3>
+                        <h3 id="totalprice"></h3>
                     </div>
                     <hr>
                     <div class="down">
-                        <h3><i class="bi bi-people-fill"></i> مناسب للرجال والنساء والاطفال</h3>
-                        <a href="#"><button>احجز الآن</button></a>
+                        <input class="policy" type="checkbox" name="policy" id="policy">
+                        <label for="policy">موافقة عالشروط والاحكام</label>
+                        <a id="book"><button id="book2">دفع </button></a>
                     </div>
 
                 </div>

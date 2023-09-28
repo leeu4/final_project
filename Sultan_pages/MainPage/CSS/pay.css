@@ -117,18 +117,57 @@ main .everything .e70 {
 }
 
 main .everything .e70 .imaged {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 25%;
-    background: url(/Sultan_pages/IMG/jahliaImg3.png) no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 12px;
+    height: 15%;
+    border-radius: 12px 12px 0 0;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+main .everything .e70 .imaged .tickets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+    width: 100%;
+}
+
+main .everything .e70 .imaged .tickets p {
+    font-size: small;
+}
+
+main .everything .e70 .imaged .tickets button {
+    width: 2.5vw;
+    height: 10%;
+    border-radius: 50%;
+    border: none;
+    overflow: none;
+    color: white;
+}
+
+main .everything .e70 .imaged .tickets .remove {
+    background: red;
+
+}
+
+main .everything .e70 .imaged .tickets .add {
+    background: green;
+
+}
+
 
 main .everything .e70 .detail {
     padding: 2%;
     width: 100%;
-    height: 75%;
+    margin-top: 2%;
+    border-radius: 0 0 12px 12px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
 
@@ -176,6 +215,10 @@ main .everything .e30 .price .up h3 {
     font-size: large;
 }
 
+.policy {
+    margin: 0 3%;
+}
+
 main .everything .e30 .price .down h3 {
     padding: 3%;
     padding-top: 0;
@@ -203,6 +246,7 @@ main .everything .e30 .price .down a button {
     color: white;
     background: rgb(65, 30, 8);
     transition: 0.3s ease;
+    margin-top: 5%;
 }
 
 main .everything .e30 .price .down a button:hover {
