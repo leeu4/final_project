@@ -22,6 +22,11 @@ document.addEventListener('scroll', function () {
   }
 })
 
+let btnlog = document.getElementById('btnlog');
+btnlog.addEventListener('click', function () {
+  window.location.href = '/Ziyad-pages/sgin-pages/sgin.html';
+})
+
 const progressCircle = document.querySelector(".autoplay-progress svg");
 const progressContent = document.querySelector(".autoplay-progress span");
 var swiper = new Swiper(".mySwiper", {
